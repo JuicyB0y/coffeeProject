@@ -1,0 +1,39 @@
+.footer {
+   height: 150px;
+   &__link {
+      margin-top: 31px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+   }
+   &__item {
+      margin-right: 40px;
+      font-weight: 400;
+      font-size: 12px;
+      text-decoration: none;
+      color: #000000;
+      &:nth-child(4){
+         margin-right: 0;
+      }
+      &:hover{
+         text-decoration: none;
+         color: #000000;
+
+      }
+   }
+   &__wrapper {
+      margin-top: 30px;
+      position: relative;
+      @include lines;
+      &:before {
+         background: #000000;
+      }
+      &:after {
+         background: #000000;
+      }
+   }
+   &__coffee {
+      display: block;
+      margin: 0 auto;
+   }
+}

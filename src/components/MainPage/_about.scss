@@ -1,0 +1,36 @@
+@import './_mixins';
+
+.mainabout {
+   height: 520px;
+   margin-top: 640px;
+   box-sizing: border-box;
+   padding-top: 80px;
+   &__title {
+      text-align: center;
+      font-weight: 400;
+      font-size: 24px;
+   }
+   &__wrapper {
+      position: relative;
+      @include lines;
+      &:before {
+         background: #000;
+      }
+      &:after {
+         background: #000;
+      }
+   }
+   &__img {
+      display: block;
+      margin: 21px auto 0 auto;
+   }
+   &__text {
+      margin: 42px auto 0 auto;
+      width: 589px;
+      height: 223px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+   }
+}

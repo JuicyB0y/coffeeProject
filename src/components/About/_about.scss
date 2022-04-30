@@ -1,0 +1,68 @@
+@import '../MainPage/_mixins';
+
+.about {
+   margin-top: 70px;
+   &__main {
+      display: flex;
+      justify-content: center;
+   }
+   &__img {
+      margin-right: 45px;
+      width: 498px;
+      height: 355px;
+      object-fit: cover;
+      box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2)
+   }
+   &__descr {
+      width: 418px;
+      &-title {
+         text-align: center;
+         font-weight: 400;
+         font-size: 24px;
+      }
+      &-country {
+         margin-top: 40px;
+         font-weight: 700;
+         font-size: 14px;
+         text-align: left;
+      }
+      &-text {
+         font-weight: 700;
+         font-size: 14px;
+         line-height: 20px;
+      }
+      &-price {
+         margin-top: 16px;
+         font-weight: 700;
+         font-size: 14px;
+      }
+      &-wrapper {
+         margin-top: 22px;
+         position: relative;
+         @include lines;
+         &:before {
+            background: black;
+            left: 103px;
+         }
+         &:after {
+            background: black;
+            left: 253px;
+         }
+      }
+      &-coffee {
+         display: block;
+         margin: 0 auto;
+      }
+   }
+}
+.search__footer-wrapper {
+   @include lines;
+   &:before {
+      background: black;
+      left: 653px;
+   }
+   &:after {
+      background: black;
+      left: 803px;
+   }
+}
